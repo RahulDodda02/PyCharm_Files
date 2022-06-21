@@ -1,0 +1,6 @@
+cursor = conn.cursor()
+
+sql = "INSERT INTO person (PersonID,Name,Gender) VALUES (%s,%s,%s)"9,James,1
+10,Jessie,2
+11,Martha,2
+#
