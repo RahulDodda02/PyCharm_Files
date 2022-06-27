@@ -2,6 +2,7 @@ import random
 import math
 import time
 
+
 # import util
 
 # simulation settings
@@ -10,7 +11,7 @@ nMoves = 1000
 nSimulations = 1000
 seed = ""  # "" for none
 shufflePlayers = True
-realTime = False # Allow step by step execution via space/enter key
+realTime = False  # Allow step by step execution via space/enter key
 num_threads = 8
 
 # some game rules

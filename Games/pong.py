@@ -122,10 +122,14 @@ while True:
     # Paddle and ball collisions
     if ball.xcor() < -440 and paddle_a.ycor() + 70 > ball.ycor() > paddle_a.ycor() - 70:
         ball.dx *= -1
+        ball.dx *= 1.03
+        ball.dy *= 1.03
         os.system("afplay bounce.wav&")
 
     elif ball.xcor() > 440 and paddle_b.ycor() + 70 > ball.ycor() > paddle_b.ycor() - 70:
         ball.dx *= -1
+        ball.dx *= 1.03
+        ball.dy *= 1.03
         os.system("afplay bounce.wav&")
 
     if score_a == 5 or score_b == 5:
@@ -133,3 +137,5 @@ while True:
         pen.write("Game Over", align="center", font=("Ariel", 120, "normal"))
         time.sleep(5)
         break
+
+
